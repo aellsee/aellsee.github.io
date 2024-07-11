@@ -1,61 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Interaction Design T2A2</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pattaya&display=swap" rel="stylesheet">"
-        <style>
-         p {color:rgb(241, 80, 206);
-            font-family: "Didact Gothic", sans-serif;
-            font-weight: 400;
-            font-style: normal;}
-         h1{color:rgb(248, 62, 183);
-            font-family: "Pattaya", sans-serif;
-            font-weight: 400;
-            font-style: normal;}
-        .babyblue {
-		    color:#479efc;} 
-        #main-bg {
-		    background:rgb(253, 210, 239);} 
-            h3{
-		       background:#fff2d0;
-               color:#4c3228;
-               padding:20px;
-               margin-top:40px;
-            }    
-        </style>
-    </head>
-
-    <body id="main-bg">
-        <h1>Ellsee</h1>
-        <h3>PROFILE</h3> 
-        <p class="babyblue">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Lobster&family=Pattaya&display=swap" rel="stylesheet">
-        <b>Lorem ipsum</b> <br/>sit amet,<i>consectetur</i> adipiscing elit. <u>Proin quis justo iaculis</u>, placerat quam ac, faucibus urna. Suspendisse a vehicula mauris. Etiam elementum imperdiet elit. Quisque viverra, metus ut blandit pulvinar, felis metus rhoncus purus, eget efficitur nisi odio vulputate magna. Ut ultrices condimentum dui, id aliquam risus sollicitudin id. Phasellus ullamcorper non sem ut auctor. In hac habitasse platea dictumst. Duis non mi sit amet quam aliquam rhoncus. Nam nec cursus libero. Nulla aliquet venenatis blandit.</p>
-
-<p>Duis sed congue velit. Vivamus porttitor turpis in efficitur porttitor. Fusce vel pretium diam, a aliquam metus. In nec dui vitae mi sollicitudin sagittis ac vitae mi. Cras finibus elit vitae turpis mollis, nec sollicitudin nisl placerat. Cras ut sodales turpis, non finibus orci. Proin non sapien ac magna volutpat semper a nec tellus. Sed fringilla ipsum sit amet commodo pharetra. Proin in sagittis magna. Curabitur dignissim, ex vitae consectetur placerat, tellus augue cursus felis, in semper odio ipsum eu purus. Donec eget nulla in nunc dapibus bibendum. Proin tincidunt sapien a elit fermentum, sed porttitor orci posuere. Donec neque libero, accumsan vitae diam eget, iaculis pharetra enim. Donec egestas vel magna mollis hendrerit. Phasellus condimentum imperdiet mi, in placerat metus commodo faucibus. Donec eget lacinia lacus.</p>
-
-<p>Phasellus sit amet dapibus urna, eget ultricies velit. In egestas neque eu accumsan eleifend. Morbi porttitor enim purus, eu pellentesque leo tristique in. Aliquam erat volutpat. Integer sem justo, vestibulum sit amet lectus sed, egestas elementum tortor. Fusce a condimentum urna. Maecenas nulla ante, pharetra at ligula in, ullamcorper convallis lorem. Proin tristique ullamcorper libero nec dignissim. Pellentesque dapibus a purus ut consectetur. Ut interdum, mauris sit amet consectetur tempus, purus sem accumsan libero, eu volutpat quam risus quis odio. Sed ultricies lacus sed diam bibendum, in hendrerit nisl placerat. Morbi mattis pellentesque orci, nec semper quam rhoncus sit amet. Donec a augue lectus.</p>
-
-<p>I am currently studying at <a class="babyblue"href= " http://np.edu.sg/fms"target="_blank" >School of Film & Media Studies - NP</a></p>
-
-<h3>PORTFOLIO</h3>
-<a href= " http://np.edu.sg/fms "target="_blank" >
-	<img src="poster.png" width="400"
-    title= "Mocha and Cinnamoroll"/>
-</a>
-    <img src="https://media1.tenor.com/m/jt8vZDVM7SMAAAAd/zerobaseone-zb1.gif"/>
-    <img src="miffy bread.jpeg" width="400"/>
-    <img src="peach.png" width="400"/>
- <br>
-    <h3>SKILLS</h3>
-	<ol>
-		<li>Photoshop</li>
-        <li>Illustrator</li>
-        <li>Web Design</li>	
-    </ol>
-    </body>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<style>
+body{
+    background: #2ec2ff;
+    background-image: url(images/ocean-bg-2.png);
+    font-family: "Nunito", sans-serif;
+    text-align:center; 
+  
+}
+#container{
+  width:1080px;
+  margin:0 auto;
+  align-items: center;
+}
+#logo{
+  margin-right: 200px;
+  height: 50px;
+}
+ul{
+  display: flex;
+  background:white;
+  margin: 0px;
+}
+li{
+  margin-top: 10px;
+  list-style-type: none;
+}
+li a{
+  display: block;
+  color: #2ec2ff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+a:hover{
+  color: #0090cc;
+}
+h1{
+  text-align: center;
+  font-size:3.6em;
+  color: white;
+  text-shadow: 2px 2px  rgba(0, 28, 106, 0.5);
+}
+#stingray{
+    padding-top: 0px;
+}
+.center{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width: 50%;
+}
+#error{
+    align-items: center;
+    margin-top: 155px;
+}
+#help{
+    font-size:1.3em;
+	  color:white;
+	  text-align: center;
+    padding-top: 50px;
+    text-shadow: 2px 2px  rgba(0, 28, 106, 0.5);
+}
+.letsgo{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+#letsgo a{
+    color:white;
+	  background: #2ec2ff;
+	  border-radius:5px;
+	  padding:10px 20px;
+	  font-weight:bold;
+	  font-size:1.3em;
+	  text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+#letsgo a:hover{
+    background-color: #0090cc;
+}
+</style>
+<body>
+    <nav>
+        <ul>
+           <li><img src="images/logo.png" id="logo"/></li>
+           <li><a href="#container">Home</a></li>
+           <li><a href="#visitus">Visit Us</a></li>
+           <li><a href="#parkmap">Park Map</a></li>
+           <li><a href="#booknow">Book Now</a></li>
+         </ul>
+       </nav>
+<div id="container">
+    <div id="error">
+        <h1>This page is lost at sea...</h1>
+        <img id="stingray" src="images/404stingray.png" class="center" usemap="#stingmap"/>
+        <map name="stingmap">
+            <area href coords="197,0,589,338" shape="rect" shape="poly" onclick="alert('Help Bluey the Stingray!')">
+        </map>
+     </div>
+     <div id="help">
+        <p>I'm lost too.<br>Help me get back to my zone!</p>
+    </div>
+    <div id="letsgo" class="letsgo">
+        <a href=page2.html>Let's go!</a>
+    </div>
+</div>
+</body> 
 </html>

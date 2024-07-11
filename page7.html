@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+</script>
+</head>
+
+<style> 
+body{
+    background: #2ec2ff;
+    background-image: url(images/openocean.png);
+    font-family: "Nunito", sans-serif;
+    text-align:center; 
+      
+}
+#container{
+  width:1080px;
+  margin:0 auto;
+  align-items: center;
+}
+#logo{
+  margin-right: 200px;
+  height: 50px;
+}
+#nav ul{
+  display: flex;
+  background:white;
+  margin: 0px;
+}
+#nav li{
+  margin-top: 10px;
+  list-style-type: none;
+}
+#nav li a{
+  display: block;
+  color: #2ec2ff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+a:hover{
+  color: #0090cc;
+}
+#openocean{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(3, 56, 118, 0.5);
+  align-items: center;
+  margin-top: 70px;
+}
+#openocean h2{
+  margin-left: 50px;
+  margin-right: 0px;
+  text-align: center;
+  font-size:3.2em;
+  color: white;
+  padding-top: 50px;
+}
+#openocean h3{
+    font-size:1.3em;
+	color:white;
+    font-weight:400;
+	text-align: center;
+  margin-bottom: 40px; 
+  margin-left: 60px;
+  margin-right: 0px;
+}
+#funfact{
+  margin-left: 350px;
+  margin-right: 300px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items:center;
+  border-top: 1px solid white;
+
+}
+#funfact p{
+  font-size: 1em;
+  text-align:left;
+  color: white;
+}
+#column1{
+  margin-top: 20px;
+  margin-bottom: 60px;
+  width:20%;
+}
+#column2{
+  margin-left: 55px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+#buttons p{
+  margin-top: 0px;
+}
+#buttons ul{
+  display: flex;
+  margin-top: 90px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#buttons li{
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+#buttons li a{
+    display: block;
+    color:white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background:#0090cc;
+    font-weight:bold;
+    
+}
+#buttons a:hover{
+  color: #2ec2ff;
+}
+.center{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width: 60%;
+}
+.egg1{
+    width: 185px;
+    height: 85px; 
+    position: absolute;
+    top:528px;
+    left: 148px;
+    cursor: pointer;
+}
+#fishegg1 a:hover{
+  background-color:rgba(3, 56, 118, 0.5);
+}
+/* The actual popup */
+.egg1 .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #2ec2ff;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.egg1 .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #2ec2ff transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.egg1 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+.guessinput{
+  width: 325px;
+  height: 120px;
+  border-radius: 5px;
+  background-color: white;
+  color: #2ec2ff;
+  padding: 20px;
+  margin-left: 380px;
+  margin-top: 50px;
+  font-family: "Nunito", sans-serif;
+  
+}
+.guessinput input[type=text]{
+  width:70%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  position: -50px;
+}
+.guessinput input[type=submit] {
+  color:white;
+	background:#008ac3;
+	border-radius:5px;
+	padding:10px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+}
+
+.guessinput input[type=submit]:hover {
+  background-color: #2ec2ff;
+}
+</style>
+<script>
+  function check(){
+    //alert("hello");
+    var ans=document.getElementById("guess").value;
+    if(ans=="Open Ocean" || ans=="open ocean"){
+      window.location="page8.html";
+    } else{
+      alert("Please try again!");
+    }
+
+  }
+</script>
+<body>
+    <div id="nav">
+        <nav>
+          <ul>
+             <li><img src="images/logo.png" id="logo"/></li>
+             <li><a href="#container">Home</a></li>
+             <li><a href="#visitus">Visit Us</a></li>
+             <li><a href="#parkmap">Park Map</a></li>
+             <li><a href="#booknow">Book Now</a></li>
+           </ul>
+      </div>
+    <div id="container">
+        <div class="egg1" onclick="myFunction()"><img id="fishegg1" src="images/fishegg1.png">
+            <span class="popuptext" id="myPopup">Welcome to<br>the Open Ocean!</span>
+        </div>
+        <div id="openocean" data-aos="zoom-in-up"> 
+            <h2> At  last, I'm home!</h2>
+            <h3> This is where I belong, guess the name of my zone! </h3>
+            <div id="funfact"> 
+              <img id="column1" src="images/clueicon.png"/>
+              <div id="column2">
+                <p><i>Hover your mouse over the fishes,<br>they might help. </i></p>
+              </div>
+            </div>
+            
+        </div>
+        <div class="guessinput" data-aos="fade-up">
+
+          <label for="guess">Enter your guess</label><br>
+          <input type="text" id="guess" maxlength="10>"><br>
+          <input type="submit" value="Submit" onclick="check()">
+          
+
+        </div>
+         
+
+    </div>
+<script>
+AOS.init();
+// When the user clicks on div, open the popup
+function myFunction() {
+  var egg1 = document.getElementById("myPopup");
+  egg1.classList.toggle("show");
+}
+</script>
+</body> 
+</html>
